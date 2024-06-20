@@ -1,0 +1,16 @@
+:root {
+	--c-primary-a: oklch(55% 0.119 250);
+	--c-bg-a: oklch(22% 0.021 255);
+	--c-bg-b: oklch(27% 0.02 255);
+	--c-fg-a: oklch(80% 0.005 255);
+	--c-fg-b: oklch(97.5% 0.005 255);
+
+	--f-body: "Urbanist", sans-serif;
+}
+
+body {
+	background: var(--c-bg-a);
+	color: var(--c-fg-a);
+	font-family: var(--f-body);
+	font-size: clamp(1rem, 2vw, 1.333rem);
+}

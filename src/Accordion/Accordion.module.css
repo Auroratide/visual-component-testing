@@ -1,0 +1,37 @@
+.accordion {
+	details {
+		padding: 0 1.25em;
+		margin-block: 0;
+
+		&:first-child summary {
+			border-radius: 0.25em 0.25em 0 0;
+		} &:last-child summary {
+			border-radius: 0 0 0.25em 0.25em;
+		}
+
+		summary {
+			border: 0.125em solid var(--c-primary-a);
+			padding: 0.375em 1em;
+			margin: 0 -1.25em;
+			letter-spacing: 0.05ch;
+			cursor: pointer;
+		}
+
+		&[open] summary {
+			background: var(--c-primary-a);
+			color: var(--c-fg-b);
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&[open] {
+			background: var(--c-bg-b);
+			padding: 0 1.25em 1.25em;
+
+			&:last-child { border-radius: 0 0 0.25em 0.25em; }
+		}
+
+		summary + * { margin-block-start: 1.25em; }
+		& > *:last-child { margin-block-end: 0; }
+	}
+}

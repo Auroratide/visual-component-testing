@@ -4,16 +4,21 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"dev": "vite"
+		"dev": "vite",
+		"storybook": "storybook dev -p 6006",
+		"sb:test": "test-storybook --maxWorkers=50%",
+		"sb:update": "test-storybook -u --maxWorkers=50%"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@fontsource/urbanist": "^5.0.20",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
+		"@storybook/addon-interactions": "^8.1.10",
 		"@storybook/blocks": "^8.1.10",
 		"@storybook/react": "^8.1.10",
 		"@storybook/react-vite": "^8.1.10",
