@@ -1,0 +1,36 @@
+.brain-expansion {
+	container-type: inline-size;
+	color: white;
+	-webkit-text-stroke: 0.0625em black;
+	font-size: 5cqi;
+	font-family: var(--f-meme);
+	position: relative;
+
+	ol {
+		list-style: none;
+	}
+
+	li {
+		position: absolute;
+		display: block;
+		inline-size: 50cqi;
+		text-align: center;
+		transform: translate(0, -50%);
+		text-transform: uppercase;
+	}
+
+	li:nth-child(1) {
+		inset-block-start: 15%;
+		inset-inline-start: 2%;
+	}
+
+	li:nth-child(2) {
+		inset-block-start: 45%;
+		inset-inline-start: 2%;
+	}
+
+	li:nth-child(3) {
+		inset-block-start: 77%;
+		inset-inline-start: 2%;
+	}
+}

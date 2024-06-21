@@ -6,6 +6,7 @@
 	--c-fg-b: oklch(97.5% 0.005 255);
 
 	--f-body: "Urbanist", sans-serif;
+	--f-meme: "Impact", sans-serif;
 }
 
 body {
@@ -13,4 +14,9 @@ body {
 	color: var(--c-fg-a);
 	font-family: var(--f-body);
 	font-size: clamp(1rem, 2vw, 1.333rem);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
